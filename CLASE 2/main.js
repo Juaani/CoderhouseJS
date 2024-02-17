@@ -35,3 +35,28 @@ else{
 //((true && true) && false) False
 //((!false || false) && true ) true
 //((!true || false) && true) false
+
+/*
+T && T = T
+F && F = F
+T && F = F
+F && T = F
+
+F || F = F 
+T || T = T 
+F || T = T 
+T || F = T 
+*/
+
+//EJEMPLO:
+
+let identificacion = parseInt(prompt("Ingrese su dni: "));
+let carnetDeConducir = parseInt(prompt("Ingrese su numero de carnet de conducir: "));
+let edadUsuario = parseInt(prompt("Ingrese su edad: "));
+
+if((identificacion || carnetDeConducir)&& edadUsuario>17 && edadUsuario<70){
+    alert("Puede conducir el acceso e identificarse");
+}
+else{
+    alert("No puede identificarse o conducir");
+}
