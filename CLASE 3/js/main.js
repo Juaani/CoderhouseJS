@@ -58,3 +58,25 @@ function sumarC (vA,vB){
 }
 
 console.log(sumarC(4,8));
+
+//FUNCIONES ANONIMAS, SE USAN PARA SER UTILIZADAS POR PARAMETRO O 
+//ASIGNADA A OTRA VARIABLE
+
+let sumaAnonima = function (a,b) {return a + b}; //sumaAnonima es la variable
+console.log(sumaAnonima(1,2));//imprimir
+
+//FUNCION FLECHA
+
+let division = (a,b) => {return a/b}; //Flecha= parametros+flecha+return
+console.log(division(4,2));//imprimir
+
+//RETURN IMPLICITO
+
+let mutiplicar = (a,b) => a*b; //Sin return
+console.log(mutiplicar(2,2));//imprimir
+
+//FUNCIONES DE UNICO PARAMETRO
+
+let nombre = a => console.log("Hola "+ a);//Parametro+Flecha+Funcion
+nombre("Juani")//Imprimir declarando valor parametro
+nombre("Ignacio");
